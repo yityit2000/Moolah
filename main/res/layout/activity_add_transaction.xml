@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moolah.dvora.moolah.view.AddTransactionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            app:title="@string/add_transaction_activity_title"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="@drawable/ic_arrow_back_24dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/toolbar_save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:padding="@dimen/default_margin"
+                android:textColor="@android:color/white"
+                android:text="@string/save_transaction_text" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/title_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:hint="@string/title_edittext_hint" />
+
+            <View
+                style="@style/HorizontalDividerStyle"/>
+
+            <TextView
+                android:id="@+id/new_transaction_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/input_field_height"
+                android:drawableLeft="@drawable/ic_event_black_24dp"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:hint="@string/pay_date_hint"/>
+
+            <View
+                style="@style/HorizontalDividerStyle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/coins_icon_black"
+                    android:layout_marginRight="16dp"
+                    />
+
+                <EditText
+                    android:id="@+id/amount_edittext"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/default_margin">
+
+                    <RadioButton
+                        android:id="@+id/incoming_radiobutton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/incoming_transaction_radiobutton"/>
+
+                    <RadioButton
+                        android:id="@+id/outgoing_radiobutton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/outgoing_transaction_radiobutton"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

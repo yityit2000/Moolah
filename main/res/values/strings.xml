@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Moolah</string>
+
+    <!-- Strings for Dummy Data in Layout-->
+    <string name="example_month">March</string>
+
+    <!-- Strings for AddTransactionActivity -->
+    <string name="add_transaction_activity_title">New Transaction</string>
+    <string name="save_transaction_text">Save</string>
+    <string name="title_edittext_hint">Title</string>
+    <string name="pay_date_hint">Pay Date</string>
+    <string name="amount_edittext_hint">436.25</string>
+    <string name="incoming_transaction_radiobutton">Incoming</string>
+    <string name="outgoing_transaction_radiobutton">Outgoing</string>
+    <string name="exact_transaction_amount_radiobutton">Exact</string>
+    <string name="approximate_transaction_amount_radiobutton">Approximate</string>
+    <string name="not_scheduled_text">Not Scheduled</string>
+    <string name="does_not_repeat_text">Does Not Repeat</string>
+    <string name="add_reminder_text">Add reminder</string>
+    <string name="add_note_text">Add note</string>
+
+</resources>

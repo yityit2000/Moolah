@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity_main specific dimensions-->
+    <dimen name="transaction_card_height">88dp</dimen>
+    <dimen name="transaction_card_margin">4dp</dimen>
+    <dimen name="transaction_text_size">16sp</dimen>
+
+    <!-- activity_add_transaction specific dimensions-->
+    <dimen name="input_field_height">60dp</dimen>
+
+    <dimen name="default_margin">16dp</dimen>
+</resources>
